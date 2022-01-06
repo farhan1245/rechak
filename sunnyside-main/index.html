@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A project made for frontend mentor for the Js challenge."
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <title>Sunnyside agency</title>
+  </head>
+  <body>
+    <!--Header with navigation and hero text  -->
+    <header class="header">
+      <nav class="navigation">
+        <figure class="navigation__logo">
+          <img src="images/logo.svg" alt="Sunnyside logo" class="nav--img" />
+        </figure>
+        <ul class="navigation__list js-menu-list">
+          <li class="navigation__list--item">
+            <a href="About/index.html" class="navigation__list--item-link">About</a>
+          </li>
+          <li class="navigation__list--item">
+            <a href="My-team-page-master/index.html" class="navigation__list--item-link">Team</a>
+          </li>
+          <li class="navigation__list--item">
+            <a href="#projects" class="navigation__list--item-link">Projects</a>
+          </li>
+          <li class="navigation__list--item">
+            <a href="contact section/index.html" class="navigation__list--item-link cta"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <figure class="navigation__menu-icon js-menu-icon">
+          <img src="images/icon-hamburger.svg" alt="Menu icon" />
+        </figure>
+      </nav>
+      <div class="header__hero--text">
+        <h1 class="heading-1">We are creatives</h1>
+        <figure class="header__hero--img mt-lg">
+          <img src="images/icon-arrow-down.svg" alt="icon-arrow-down." />
+        </figure>
+      </div>
+    </header>
+    <main>
+      <!-- features section -->
+      <section id="about" class="feature">
+        <figure class="feature--image align-image">
+          <img
+            src="images/desktop/image-transform.jpg"
+            alt="Transform your business"
+            class="img-fluid"
+            srcset="
+              images/desktop/image-transform.jpg 577w,
+              images/mobile/image-transform.jpg  576w
+            "
+            sizes="(min-width: 48em) 50vw , 100vw"
+          />
+        </figure>
+        <div class="feature--text align-text">
+          <h2 class="heading-2">Transform your brand</h2>
+          <p class="paragraph mt-sm">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a href="#" class="feature--link mt-md yellow">LEARN MORE</a>
+        </div>
+        <figure class="feature--image">
+          <img
+            src="images/desktop/image-stand-out.jpg"
+            alt="Stand out to the right audience"
+            class="img-fluid"
+            srcset="
+              images/desktop/image-stand-out.jpg 577w,
+              images/mobile/image-stand-out.jpg  576w
+            "
+            sizes="(min-width: 48em) 50vw , 100vw"
+          />
+        </figure>
+        <div class="feature--text">
+          <h2 class="heading-2">Stand out to the right audience</h2>
+          <p class="paragraph mt-sm">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="#" class="feature--link mt-md pink">LEARN MORE</a>
+        </div>
+      </section>
+      <!-- services section -->
+      <section id="services" class="services">
+        <div class="services__left-column">
+          <div class="services--text">
+            <h2 class="heading-2">Graphic design</h2>
+            <p class="paragraph mt-sm">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+          <figure class="services--image">
+            <img
+              src="images/desktop/image-graphic-design.jpg"
+              alt="Stand out to the right audience"
+              class="image-graphic-design"
+              srcset="
+                images/desktop/image-graphic-design.jpg 577w,
+                images/mobile/image-graphic-design.jpg  576w
+              "
+              sizes="(min-width: 48em) 50vw , 100vw"
+            />
+          </figure>
+        </div>
+        <div class="services__right-column">
+          <div class="services--text">
+            <h2 class="heading-2">Photography</h2>
+            <p class="paragraph mt-sm">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+          <figure class="services--image">
+            <img
+              src="images/desktop/image-photography.jpg"
+              alt="image-photography"
+              class="img-fluid"
+              srcset="
+                images/desktop/image-photography.jpg 577w,
+                images/mobile/image-photography.jpg  576w
+              "
+              sizes="(min-width: 48em) 50vw , 100vw"
+            />
+          </figure>
+        </div>
+      </section>
+      <!-- Testimonial section -->
+      <section class="testimonial">
+        <h3 class="heading-3">Client testimonials</h3>
+        <div class="testimonial--container mt-lg">
+          <div class="testimonial--wrapper">
+            <figure class="testimonial--img">
+              <img src="images/image-emily.jpg" alt="image-emily" />
+            </figure>
+            <p class="paragraph">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h4 class="heading-4 mt-md">Emily R.</h4>
+            <span class="testimonial--person"> Marketing Director</span>
+          </div>
+          <div class="testimonial--wrapper">
+            <figure class="testimonial--img">
+              <img src="images/image-thomas.jpg" alt="image-thomas" />
+            </figure>
+            <p class="paragraph">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <h4 class="heading-4 mt-md">Thomas S.</h4>
+            <span class="testimonial--person"> Chief Operating Officer</span>
+          </div>
+          <div class="testimonial--wrapper">
+            <figure class="testimonial--img">
+              <img src="images/image-jennie.jpg" alt="image-jennie" />
+            </figure>
+            <p class="paragraph">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <h4 class="heading-4 mt-md">Jennie F.</h4>
+            <span class="testimonial--person"> Business Owner</span>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery section -->
+      <section id="projects" class="gallery">
+        <h2 class="scr-reader">Gallery</h2>
+        <figure class="gallery--image">
+          <img
+            src="images/desktop/image-gallery-milkbottles.jpg"
+            alt="image-gallery-milkbottles"
+            class="img-fluid"
+            srcset="
+              images/desktop/image-gallery-milkbottles.jpg 577w,
+              images/mobile/image-gallery-milkbottles.jpg  576w
+            "
+            sizes="(min-width: 48em) 25vw , 50vw"
+          />
+        </figure>
+        <figure class="gallery--image">
+          <img
+            src="images/desktop/image-gallery-orange.jpg"
+            alt="image-gallery-orange"
+            class="img-fluid"
+            srcset="
+              images/desktop/image-gallery-orange.jpg 577w,
+              images/mobile/image-gallery-orange.jpg  576w
+            "
+            sizes="(min-width: 48em) 25vw , 50vw"
+          />
+        </figure>
+        <figure class="gallery--image">
+          <img
+            src="images/desktop/image-gallery-sugarcubes.jpg"
+            alt="image-gallery-sugarcubes"
+            class="img-fluid"
+            srcset="
+              images/desktop/image-gallery-sugarcubes.jpg 577w,
+              images/mobile/image-gallery-sugar-cubes.jpg 576w
+            "
+            sizes="(min-width: 48em) 25vw , 50vw"
+          />
+        </figure>
+        <figure class="gallery--image">
+          <img
+            src="images/desktop/image-gallery-cone.jpg"
+            alt="image-gallery-cone"
+            class="img-fluid"
+            srcset="
+              images/desktop/image-gallery-cone.jpg 577w,
+              images/mobile/image-gallery-cone.jpg  576w
+            "
+            sizes="(min-width: 48em) 25vw , 50vw"
+          />
+        </figure>
+      </section>
+    </main>
+    <!-- Footer section -->
+    <footer id="contact" class="footer">
+      <figure class="footer--logo">
+        <img src="images/logo-footer.svg" alt="" />
+      </figure>
+      <div class="footer-nav mt-md">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__list--item">
+            <a href="#" class="footer-nav__list--item-link">About</a>
+          </li>
+          <li class="footer-nav__list--item">
+            <a href="#" class="footer-nav__list--item-link">Services</a>
+          </li>
+          <li class="footer-nav__list--item">
+            <a href="#" class="footer-nav__list--item-link">Projects</a>
+          </li>
+          <li class="footer-nav__list--item">
+            <a href="#" class="footer-nav__list--item-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__social mt-lg">
+        <a href="#" class="footer__social-link">
+          <figure class="footer__social-icon">
+            <img src="images/icon-facebook.svg" alt="icon-facebook" />
+          </figure>
+        </a>
+        <a href="#" class="footer__social-link">
+          <figure class="footer__social-icon">
+            <img src="images/icon-instagram.svg" alt="icon-instagram" />
+          </figure>
+        </a>
+        <a href="#" class="footer__social-link">
+          <figure class="footer__social-icon">
+            <img src="images/icon-twitter.svg" alt="icon-twitter" />
+          </figure>
+        </a>
+        <a href="#" class="footer__social-link">
+          <figure class="footer__social-icon">
+            <img src="images/icon-pinterest.svg" alt="icon-pinterest" />
+          </figure>
+        </a>
+      </div>
+
+  </body>
+</html>
